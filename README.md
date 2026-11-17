@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg" alt="Vitalii Zabolotnyi. Mild-mannered database architect by day. Ferocious vibecoder by night." width="100%">
+<img src="assets/hero.svg" alt="Vitalii Zabolotnyi. DB by day. Vibes by night." width="100%">
 
 [![Telegram](https://img.shields.io/badge/Telegram-@bxsmxnjx-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0d1117)](https://t.me/bxsmxnjx)
 [![uaanime release](https://img.shields.io/github/v/release/Basmanjacks/uaanime?style=for-the-badge&label=uaanime&color=39d353&labelColor=0d1117)](https://github.com/Basmanjacks/uaanime/releases)
@@ -56,11 +56,11 @@ Excel export, push and Microsoft Teams notifications, and a read-only REST API.
 ## `$ cat stack.yml`
 
 ```yaml
-day_job:            # mild-mannered
+day_job:
   role: database architect
   tools: [SQL Server, T-SQL, PostgreSQL, data warehouses, Liquibase]
 
-night_shift:        # ferocious
+night_shift:
   role: vibecoder
   langs: [Go, TypeScript, SQL, Bash]
   web: [Next.js, React, Tailwind, Supabase, Prisma]
