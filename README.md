@@ -1,16 +1,12 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="vitalii@nightshift:~$ whoami — Vitalii Zabolotnyi. Mild-mannered database architect by day. Ferocious vibecoder by night." width="100%">
+<img src="assets/hero.svg" alt="Vitalii Zabolotnyi. Mild-mannered database architect by day. Ferocious vibecoder by night." width="100%">
 
 [![Telegram](https://img.shields.io/badge/Telegram-@bxsmxnjx-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0d1117)](https://t.me/bxsmxnjx)
 [![uaanime release](https://img.shields.io/github/v/release/Basmanjacks/uaanime?style=for-the-badge&label=uaanime&color=39d353&labelColor=0d1117)](https://github.com/Basmanjacks/uaanime/releases)
 [![Retro Board](https://img.shields.io/badge/live-myretroboard.dev-58a6ff?style=for-the-badge&labelColor=0d1117)](https://myretroboard.dev)
 
 </div>
-
-```text
-$ cat about.txt
-```
 
 By day I design databases: schemas, warehouses, T-SQL that has to survive production.
 By night I put on the cape and vibecode whole products with AI pair programmers —
@@ -19,6 +15,8 @@ a Go CLI, a realtime retro tool, a team absence tracker. Ship first, polish late
 ## `$ ls -l ~/ships`
 
 ### 📺 [uaanime](https://github.com/Basmanjacks/uaanime) — anime in Ukrainian, straight from the terminal
+
+<a href="https://github.com/Basmanjacks/uaanime"><img src="assets/uaanime.svg" alt="uaanime: the home screen lists a title to continue, Enter resumes the episode from 14:32 with the remembered dubbing studio" width="100%"></a>
 
 A Go TUI that remembers where you stopped (±5 s, even after `kill -9`), sticks to your favourite
 dubbing studio, keeps a watchlist offline, shows new episodes and silently falls back when a video
@@ -35,11 +33,11 @@ brew install --cask Basmanjacks/uaanime/uaanime
 
 ### 🃏 [Retro Board](https://myretroboard.dev) — retros and planning poker, in one place
 
+<a href="https://myretroboard.dev"><img src="assets/retro-board.svg" alt="Illustration of Retro Board: cards land in three retro columns while four planning poker cards flip to reveal the estimate" width="100%"></a>
+
 Realtime sprint retrospectives and planning poker. Create a board, share a secret link, and the
 team joins instantly — no sign-up for participants. Cards, votes, comments, action items and
 estimates update live for everyone.
-
-<a href="https://myretroboard.dev"><img src="assets/retro-board.png" alt="Retro Board landing page" width="100%"></a>
 
 `Next.js` · `TypeScript` · `Supabase Realtime` · `Tailwind` · `Vercel` · live at **[myretroboard.dev](https://myretroboard.dev)**
 
@@ -47,11 +45,11 @@ estimates update live for everyone.
 
 ### 🗓️ Workforce — who is away, and when *(private)*
 
+<img src="assets/workforce.svg" alt="Illustration of the Workforce team timeline" width="100%">
+
 A team absence tracker built around one timeline: a row per person, a column per day, a bar per
 absence. Approvals, vacation balances, company holidays, sprints, expenses with receipts,
 Excel export, push and Microsoft Teams notifications, and a read-only REST API.
-
-<img src="assets/workforce.svg" alt="Illustration of the Workforce team timeline" width="100%">
 
 `Next.js 16` · `React 19` · `PostgreSQL 17` · `Prisma 7` · `Auth.js` · `Playwright` · `Docker`
 

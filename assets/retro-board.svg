@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="296" viewBox="0 0 860 296" role="img" aria-labelledby="t d">
+<title id="t">Retro Board — a live retrospective board next to a planning poker round</title>
+<desc id="d">Illustration with made-up content. Cards appear one by one in three retro columns: Went well, To improve and Action items. A teammate's cursor adds a vote. On the right, four planning poker cards flip at once to reveal 3, 5, 5 and 8, and the estimate settles on 5.</desc>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;font-size:11.500px;fill:#e4e4e7}
+.h{font-size:12px;font-weight:700;fill:#fafafa}.dim{fill:#8f8f99}.sm{font-size:10.500px}
+.card{fill:#18181b;stroke:#2e2e33}
+/* one 12 s loop: cards land 5-45%, a vote at 52%, poker reveal at 62% */
+.c1{animation:c1 12s infinite}.c2{animation:c2 12s infinite}.c3{animation:c3 12s infinite}
+.c4{animation:c4 12s infinite}.c5{animation:c5 12s infinite}.c6{animation:c6 12s infinite}
+.votes{animation:votes 12s infinite step-end}
+.bump{transform-box:fill-box;transform-origin:center;animation:bump 12s infinite}
+.cursor{animation:cursor 12s infinite ease-in-out}
+.back{transform-box:fill-box;transform-origin:center;animation:back 12s infinite}
+.front{transform-box:fill-box;transform-origin:center;animation:front 12s infinite}
+.result{animation:result 12s infinite}
+.live{animation:live 1.6s ease-in-out infinite}
+@keyframes c1{0%,5%{opacity:0;transform:translateY(8px)}9%,95%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(0)}}
+@keyframes c2{0%,13%{opacity:0;transform:translateY(8px)}17%,95%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(0)}}
+@keyframes c3{0%,21%{opacity:0;transform:translateY(8px)}25%,95%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(0)}}
+@keyframes c4{0%,29%{opacity:0;transform:translateY(8px)}33%,95%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(0)}}
+@keyframes c5{0%,37%{opacity:0;transform:translateY(8px)}41%,95%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(0)}}
+@keyframes c6{0%,45%{opacity:0;transform:translateY(8px)}49%,95%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(0)}}
+@keyframes votes{0%{transform:translateY(0)}55%,100%{transform:translateY(-16px)}}
+@keyframes bump{0%,54%{transform:scale(1)}56%{transform:scale(1.25)}59%,100%{transform:scale(1)}}
+@keyframes cursor{0%,44%{opacity:0;transform:translate(300px,150px)}47%{opacity:1;transform:translate(300px,150px)}53%,57%{opacity:1;transform:translate(0,0)}63%{opacity:1;transform:translate(120px,96px)}66%,100%{opacity:0;transform:translate(120px,96px)}}
+@keyframes back{0%,60%{opacity:1;transform:scaleX(1)}63%{opacity:1;transform:scaleX(0)}63.100%,96%{opacity:0;transform:scaleX(0)}100%{opacity:1;transform:scaleX(1)}}
+@keyframes front{0%,63%{opacity:0;transform:scaleX(0)}66%,95%{opacity:1;transform:scaleX(1)}100%{opacity:0;transform:scaleX(1)}}
+@keyframes result{0%,69%{opacity:0}73%,95%{opacity:1}100%{opacity:0}}
+@keyframes live{50%{opacity:.3}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+  <clipPath id="win"><rect width="860" height="296" rx="12"/></clipPath>
+  <clipPath id="vote"><rect x="160" y="107" width="14" height="16"/></clipPath>
+</defs>
+
+<g clip-path="url(#win)">
+  <rect width="860" height="296" fill="#0a0a0b"/>
+  <text x="20" y="27" class="h" style="font-size:13px">Sprint 42 · retro</text>
+  <circle class="live" cx="141" cy="23" r="3.500" fill="#4ade80"/>
+  <text x="150" y="27" class="dim sm">live · 4 online</text>
+  <g font-weight="700" text-anchor="middle">
+    <circle cx="770" cy="22" r="11" fill="#3f6212"/><text x="770" y="26" class="sm" style="fill:#ecfccb">A</text>
+    <circle cx="790" cy="22" r="11" fill="#9d174d" stroke="#0a0a0b" stroke-width="2"/><text x="790" y="26" class="sm" style="fill:#fce7f3">M</text>
+    <circle cx="810" cy="22" r="11" fill="#1e40af" stroke="#0a0a0b" stroke-width="2"/><text x="810" y="26" class="sm" style="fill:#dbeafe">D</text>
+    <circle cx="830" cy="22" r="11" fill="#92400e" stroke="#0a0a0b" stroke-width="2"/><text x="830" y="26" class="sm" style="fill:#fef3c7">O</text>
+  </g>
+  <line x1="0" y1="42" x2="860" y2="42" stroke="#232326"/>
+
+  <!-- retro columns -->
+  <g>
+    <rect x="20" y="54" width="172" height="196" rx="9" fill="#111113" stroke="#232326"/>
+    <circle cx="35" cy="72" r="4" fill="#4ade80"/><text x="45" y="76" class="h">Went well</text>
+    <rect x="202" y="54" width="172" height="196" rx="9" fill="#111113" stroke="#232326"/>
+    <circle cx="217" cy="72" r="4" fill="#fbbf24"/><text x="227" y="76" class="h">To improve</text>
+    <rect x="384" y="54" width="172" height="196" rx="9" fill="#111113" stroke="#232326"/>
+    <circle cx="399" cy="72" r="4" fill="#60a5fa"/><text x="409" y="76" class="h">Action items</text>
+  </g>
+
+  <g class="c1">
+    <rect class="card" x="28" y="88" width="156" height="50" rx="7"/>
+    <text x="38" y="107">Shipped realtime</text><text x="38" y="123">sync on time</text>
+    <g class="bump"><rect x="140" y="104" width="38" height="22" rx="11" fill="#14532d"/>
+    <path d="M148 118l4-6 4 6z" fill="#86efac"/>
+    <g clip-path="url(#vote)"><g class="votes"><text x="161" y="119" style="fill:#bbf7d0;font-weight:700">3</text><text x="161" y="135" style="fill:#bbf7d0;font-weight:700">4</text></g></g></g>
+  </g>
+  <g class="c3">
+    <rect class="card" x="28" y="146" width="156" height="50" rx="7"/>
+    <text x="38" y="165">Zero prod incidents</text><text x="38" y="181" class="dim">two sprints in a row</text>
+  </g>
+  <g class="c2">
+    <rect class="card" x="210" y="88" width="156" height="50" rx="7"/>
+    <text x="220" y="107">Flaky e2e tests</text><text x="220" y="123">block merges</text>
+    <rect x="322" y="104" width="38" height="22" rx="11" fill="#713f12"/>
+    <path d="M330 118l4-6 4 6z" fill="#fde68a"/><text x="343" y="119" style="fill:#fef3c7;font-weight:700">3</text>
+  </g>
+  <g class="c4">
+    <rect class="card" x="210" y="146" width="156" height="50" rx="7"/>
+    <text x="220" y="165">Standups run long</text><text x="220" y="181" class="dim">25 min on average</text>
+  </g>
+  <g class="c5">
+    <rect class="card" x="392" y="88" width="156" height="50" rx="7"/>
+    <rect x="402" y="98" width="12" height="12" rx="3" fill="none" stroke="#60a5fa" stroke-width="1.500"/>
+    <text x="421" y="108">Quarantine flaky</text><text x="421" y="124">tests · Dmytro</text>
+  </g>
+  <g class="c6">
+    <rect class="card" x="392" y="146" width="156" height="50" rx="7"/>
+    <rect x="402" y="156" width="12" height="12" rx="3" fill="none" stroke="#60a5fa" stroke-width="1.500"/>
+    <text x="421" y="166">Timebox standup</text><text x="421" y="182">to 10 min · Olena</text>
+  </g>
+
+  <!-- a teammate votes -->
+  <g class="cursor" opacity="0">
+    <path d="M160 118l0 15 4.200-3.600 3.100 6.600 2.600-1.200-3.100-6.500 5.400-.400z" fill="#f472b6" stroke="#0a0a0b"/>
+    <rect x="172" y="132" width="40" height="17" rx="5" fill="#f472b6"/>
+    <text x="192" y="144" text-anchor="middle" class="sm" style="fill:#500724;font-weight:700">Maria</text>
+  </g>
+
+  <!-- planning poker -->
+  <rect x="576" y="54" width="264" height="196" rx="9" fill="#111113" stroke="#232326"/>
+  <text x="590" y="76" class="h">Planning poker</text>
+  <text x="826" y="76" text-anchor="end" class="dim sm">PAY-128 · refund flow</text>
+  <g>
+    <g class="back"><rect x="592" y="92" width="48" height="68" rx="7" fill="#1f1f23" stroke="#3f3f46"/><rect x="598" y="98" width="36" height="56" rx="4" fill="none" stroke="#3f3f46" stroke-dasharray="3 3"/></g>
+    <g class="back"><rect x="652" y="92" width="48" height="68" rx="7" fill="#1f1f23" stroke="#3f3f46"/><rect x="658" y="98" width="36" height="56" rx="4" fill="none" stroke="#3f3f46" stroke-dasharray="3 3"/></g>
+    <g class="back"><rect x="712" y="92" width="48" height="68" rx="7" fill="#1f1f23" stroke="#3f3f46"/><rect x="718" y="98" width="36" height="56" rx="4" fill="none" stroke="#3f3f46" stroke-dasharray="3 3"/></g>
+    <g class="back"><rect x="772" y="92" width="48" height="68" rx="7" fill="#1f1f23" stroke="#3f3f46"/><rect x="778" y="98" width="36" height="56" rx="4" fill="none" stroke="#3f3f46" stroke-dasharray="3 3"/></g>
+    <g class="front" opacity="0" text-anchor="middle" font-weight="800"><rect x="592" y="92" width="48" height="68" rx="7" fill="#fafafa"/><text x="616" y="136" style="font-size:28px;fill:#18181b">3</text></g>
+    <g class="front" opacity="0" text-anchor="middle" font-weight="800"><rect x="652" y="92" width="48" height="68" rx="7" fill="#fafafa" stroke="#4ade80" stroke-width="2.500"/><text x="676" y="136" style="font-size:28px;fill:#18181b">5</text></g>
+    <g class="front" opacity="0" text-anchor="middle" font-weight="800"><rect x="712" y="92" width="48" height="68" rx="7" fill="#fafafa" stroke="#4ade80" stroke-width="2.500"/><text x="736" y="136" style="font-size:28px;fill:#18181b">5</text></g>
+    <g class="front" opacity="0" text-anchor="middle" font-weight="800"><rect x="772" y="92" width="48" height="68" rx="7" fill="#fafafa"/><text x="796" y="136" style="font-size:28px;fill:#18181b">8</text></g>
+  </g>
+  <g text-anchor="middle" class="dim">
+    <text x="616" y="178" class="dim sm">Alex</text><text x="676" y="178" class="dim sm">Maria</text><text x="736" y="178" class="dim sm">Dmytro</text><text x="796" y="178" class="dim sm">Olena</text>
+  </g>
+  <g class="result" opacity="0">
+    <rect x="592" y="196" width="228" height="38" rx="9" fill="#14532d" stroke="#166534"/>
+    <text x="606" y="220" style="fill:#bbf7d0">Estimate</text>
+    <text x="806" y="221" text-anchor="end" style="fill:#f0fdf4;font-size:17px;font-weight:800">5 points</text>
+  </g>
+
+  <text x="20" y="277" class="dim sm">Illustration with made-up content — the real thing is live at myretroboard.dev</text>
+</g>
+<rect x=".500" y=".500" width="859" height="295" rx="11.500" fill="none" stroke="#2e2e33"/>
+</svg>
