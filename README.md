@@ -3,7 +3,8 @@
 <img src="assets/hero.svg" alt="Vitalii Zabolotnyi. DB by day. Vibes by night." width="100%">
 
 [![Telegram](https://img.shields.io/badge/Telegram-@bxsmxnjx-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0d1117)](https://t.me/bxsmxnjx)
-[![uaanime release](https://img.shields.io/github/v/release/Basmanjacks/uaanime?style=for-the-badge&label=uaanime&color=39d353&labelColor=0d1117)](https://github.com/Basmanjacks/uaanime/releases)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=for-the-badge&labelColor=0d1117)](https://www.linkedin.com/in/vitalii-zabolotnyi-12a740152/)
+[![uaanime release](https://img.shields.io/github/v/release/basmanjacks/uaanime?style=for-the-badge&label=uaanime&color=39d353&labelColor=0d1117)](https://github.com/basmanjacks/uaanime/releases)
 [![Retro Board](https://img.shields.io/badge/live-myretroboard.dev-58a6ff?style=for-the-badge&labelColor=0d1117)](https://myretroboard.dev)
 
 </div>
@@ -14,17 +15,17 @@ a Go CLI, a realtime retro tool, a team absence tracker. Ship first, polish late
 
 ## `$ ls -l ~/ships`
 
-### 📺 [uaanime](https://github.com/Basmanjacks/uaanime) — anime in Ukrainian, straight from the terminal
+### 📺 [uaanime](https://github.com/basmanjacks/uaanime) — anime in Ukrainian, straight from the terminal
 
-<a href="https://github.com/Basmanjacks/uaanime"><img src="assets/uaanime.svg" alt="uaanime: the home screen lists a title to continue, Enter resumes the episode from 14:32 with the remembered dubbing studio" width="100%"></a>
+<a href="https://github.com/basmanjacks/uaanime"><img src="assets/uaanime.svg" alt="uaanime: the home screen lists a title to continue, Enter resumes the episode from 14:32 with the remembered dubbing studio" width="100%"></a>
 
 A Go TUI that remembers where you stopped (±5 s, even after `kill -9`), sticks to your favourite
 dubbing studio, keeps a watchlist offline, shows new episodes and silently falls back when a video
 host dies. No accounts, no telemetry.
 
 ```bash
-brew tap Basmanjacks/uaanime
-brew install --cask Basmanjacks/uaanime/uaanime
+brew tap basmanjacks/uaanime
+brew install --cask basmanjacks/uaanime/uaanime
 ```
 
 `Go` · `Bubble Tea` · `Lip Gloss` · `mpv / VLC` · `Homebrew tap` · `GoReleaser`
@@ -76,7 +77,7 @@ night_shift:
 ## `$ tail -f contributions.log`
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Basmanjacks/Basmanjacks/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Basmanjacks/Basmanjacks/output/github-snake.svg">
-  <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/Basmanjacks/Basmanjacks/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/basmanjacks/basmanjacks/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/basmanjacks/basmanjacks/output/github-snake.svg">
+  <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/basmanjacks/basmanjacks/output/github-snake-dark.svg">
 </picture>
